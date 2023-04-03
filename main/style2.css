@@ -1,11 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
-    text-decoration: none;
+    /* box-sizing: border-box; */
     font-family: sans-serif;
 }
+
 .container{
     display: grid;
     grid-template-rows: 1fr;
@@ -16,90 +15,86 @@ header{
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 10%;
-    background: antiquewhite;
+    height: 15%;
+    padding: auto;
+    background: black;
     box-shadow: 0 4px 25px -22px black;
     z-index: 10;
 }
 .header-container{
     display: flex;
     justify-content: space-around;
-
+       
+}
+img{
+    position: relative;
+    top: 10px;
+    height: 60px;
+    width: 60px;
 }
 nav{
     position: relative;
     top: 20px;
     display: flex;
-    grid-row: 1/2;
+    /* grid-row: 1/2; */
     
 }
 nav a {
-    color:#051014;
+    color:white;
     font-size: x-large;
    
     padding: 0px 10px; 
-    border: 3px black;
-    border-style: solid;
+    /* border: 3px black;
+    border-style: solid; */
     text-decoration: none;
-    border-radius: 30px;    
+    /* border-radius: 30px;     */
 }
 nav a:hover{
-    background-color: #f9ffa0;
+    color: #f9ffa0;
 }
-
-.main-container{
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     width: 100%;
     height: 600px;
-    position: relative;
-    top: 75px;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    position: fixed;
     z-index: -1; 
-    box-shadow: 0 4px 25px -22px black; 
-}
-.main-container h1{
-    width: 100%;
-    height: 600px;
     
 }
-
-.video{
-    
+.wrapper{
     position: relative;
-    top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+
+}
+
+
+
+article{
+    padding:10px;
+    padding-bottom: 0px;
+    border: 2px black;
+    border-style:solid;
+    
     background-color: #94B9DB;
-    height: 500px;
-    padding-top: 20px;
-
-    
+    margin:10px;
 }
-video{
-    /* width:400px; 
-    height:240px; */
-    
-    width: 500px;
-    height: 420px;
-    display: block;
-    margin: auto;
-    /* border: 5px solid #45c9d0;
-    border-radius: 20px; */
-    /* position: ab; */
-    
 
-}
 
 footer{
     width: 100%;
     height: 150%;
     background-color: aliceblue;
-    z-index: 10;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-decoration: none;
+    box-sizing: border-box;
+    justify-content: space-between;
     
-    /* grid-row: -1; */
-    /* display: flex;
-    flex-direction: column; */
-    /* position: relative; */ 
 }
 .author{
     
